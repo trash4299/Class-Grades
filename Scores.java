@@ -5,13 +5,13 @@ public class Scores
     private int[] myScores;
     private int mySize;
     private static final int MAXSIZE = 10;
-    //----------------------------------------------------------------------------------------------------------------- --------------------------------
+    
     public Scores()
     {
         myScores = new int[MAXSIZE];
         mySize = 0;
     }
-     //-------------------------------------------------------------------------------------------------------------------------------------------------
+    
     public void getScores(String line) throws IOException, FileNotFoundException
     {
         Scanner in = new Scanner(line);
@@ -21,7 +21,7 @@ public class Scores
             mySize++;
         }
     }
-    //-------------------------------------------------------------------------------------------------------------------------------------------------
+    
     public double findAverage()
     {
         double sum = 0;
@@ -29,7 +29,7 @@ public class Scores
             sum+=myScores[i];
         return sum/mySize;
     }
-    //-------------------------------------------------------------------------------------------------------------------------------------------------
+    
     public String toString()
     {
         String scores = "";
