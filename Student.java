@@ -31,7 +31,7 @@ public class Student
     private final double TESTAVE = .65;
     private final double PROGAVE = .30;
     private final double HKAVE = .05;
-    //----------------------------------------------------------------------------------------------------------------------------- --------------------
+    
     public Student()
     {
         myName =  "";
@@ -40,7 +40,7 @@ public class Student
         myProgs= new Scores();
         myHk= new Scores();
     }
-    //-------------------------------------------------------------------------------------------------------------------------------------------------
+    
     public void inputInfo(Scanner line)    throws IOException, FileNotFoundException
     {
         myName = line.nextLine();
@@ -50,7 +50,7 @@ public class Student
         this.computeAve();
         this.computeGrade();
     }
-    //-------------------------------------------------------------------------------------------------------------------------------------------------
+    
     public void computeAve()      
     {
         testAve =(int) ((myTests.findAverage()/TESTPOINTS)*100);
@@ -58,7 +58,7 @@ public class Student
         hkAve = (int) ((myHk.findAverage()/HKPOINTS)*100);
         myAve = (int)(testAve*TESTAVE + progAve*PROGAVE + hkAve*HKAVE);
     }
-    //-------------------------------------------------------------------------------------------------------------------------------------------------
+    
     public void computeGrade()     
     {
         if(myAve>=AP)
@@ -86,7 +86,7 @@ public class Student
         else
            myGrade = "F";
     }
-    //-------------------------------------------------------------------------------------------------------------------------------------------------
+    
     public String toString()
     {
         if(myName.length()>7)
@@ -95,12 +95,12 @@ public class Student
             System.out.println(myName + "\t\t" + testAve + " \t" + progAve + "\t" + hkAve + "\t" + myAve + "\t" + myGrade);
         return"";
     }
-    //-------------------------------------------------------------------------------------------------------------------------------------------------
+    
     public double getAve()
     {
         return myAve;
     }
-    //-------------------------------------------------------------------------------------------------------------------------------------------------
+    
     public String getMyGrade()
     {
         return myGrade;
