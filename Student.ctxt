@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Student()
+comment1.params=line
+comment1.target=void\ inputInfo(java.util.Scanner)
+comment2.params=
+comment2.target=void\ computeAve()
+comment3.params=
+comment3.target=void\ computeGrade()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=
+comment5.target=double\ getAve()
+comment6.params=
+comment6.target=java.lang.String\ getMyGrade()
+numComments=7
